@@ -1,13 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+
+import { StyleSheet, Text, View, TextInput } from "react-native";
 // import styled from "styled-components/native";
+
+import Search from "./components/Search";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Wow</Text>
-
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
+      <Search />
     </View>
   );
 }
@@ -15,11 +17,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "teal",
   },
   text: {
+    flex: 1,
+
     color: "teal",
     fontSize: 48,
   },
